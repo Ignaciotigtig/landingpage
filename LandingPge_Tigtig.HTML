@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #1507d6;
+            color: white;
+        }
+
+        .logo {
+            font-size: 1.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?business,technology') no-repeat center/cover;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: red;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .content {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .content h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input, textarea {
+            width: 80%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #f80505;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #ff5722;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">Welcome hommies. </h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Welcome to Our Landing Page</h2>
+        <p>We provide the best services for your business growth.</p>
+        <a href="#services" class="btn">Explore Services</a>
+    </section>
+
+    <section id="about" class="content">
+        <h2>About Us</h2>
+        <p>We are a leading company with years of experience in delivering top-notch solutions.</p>
+    </section>
+
+    <section id="services" class="content">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>SEO Optimization</li>
+            <li>Digital Marketing</li>
+        </ul>
+    </section>
+
+    <section id="blog" class="content">
+        <h2>Our Blog</h2>
+        <p>Stay updated with our latest insights and articles.</p>
+    </section>
+
+    <section id="contact" class="content">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MyBrand. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+                        
